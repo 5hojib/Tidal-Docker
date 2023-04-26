@@ -1,5 +1,5 @@
-## Docker image push through workflow!
-
-instructions
-1. add DOCKERHUB_USERNAME and DOCKERHUB_PASSWORD in secrets
-2. Then edit workflow file.
+## instructions
+Add these value in secrets
+* `DOCKERHUB_USERNAME`
+* `DOCKERHUB_PASSWORD`
+* `IMAGE_NAME`
