@@ -9,7 +9,7 @@ ENV TZ=Asia/Dhaka
 RUN apt-get -qq update --fix-missing 
 
 
-RUN apt install python3-pip
+RUN apt install -y python3-pip
 
 COPY requirements.txt .
 
