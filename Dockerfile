@@ -8,9 +8,10 @@ ENV TZ=Asia/Dhaka
 
 RUN apt-get -qq update --fix-missing 
 
+RUN apt-get -qq install -y git wget curl busybox python3 python3-pip locales
 
-RUN apt install -y python3-pip
+RUN apt install python3-pip
 
 COPY requirements.txt .
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
